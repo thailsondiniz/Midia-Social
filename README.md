@@ -1,16 +1,12 @@
-# flutter_project_09
-
-A new Flutter project.
+# Rede Social
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+App de media social inspirado em um UI Designer do Dribbble.
 
-A few resources to get you started if this is your first Flutter project:
+Todos os direitos reservados a Julia Shagofferova 🇺🇦.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Creditos => [Julia Shagofferova 🇺🇦](https://dribbble.com/shots/11585265-SOCIAL-MEDIA-UI-KIT/attachments/3206318?mode=media)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+![image info](https://cdn.dribbble.com/users/1080850/screenshots/11585265/media/01aaa0e9a2325d1032112e98d5c78474.png)
