@@ -53,11 +53,11 @@ class _HomePageState extends State<HomePage> {
                             boxShadow: const [
                               BoxShadow(
                                 color: Color.fromARGB(255, 204, 204, 204),
-                                blurRadius: 4.0, // soften the shadow
-                                spreadRadius: 1, //extend the shadow
+                                blurRadius: 4.0,
+                                spreadRadius: 1, 
                                 offset: Offset(
-                                  1.0, // Move to right 5  horizontally
-                                  1.0, // Move to bottom 5 Vertically
+                                  1.0, 
+                                  1.0, 
                                 ),
                               )
                             ],
