@@ -9,11 +9,36 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   var corbutton = Icons.favorite_border_outlined;
+  int _selectedIndex = 0;
   var apertou = false;
+  void _onItemTapped(int index) {
+    setState(() {
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.search),
+            label: 'Search',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.black,
+        onTap: _onItemTapped,
+      ),
       appBar: AppBar(
         actions: [
           IconButton(
@@ -54,10 +79,10 @@ class _HomePageState extends State<HomePage> {
                               BoxShadow(
                                 color: Color.fromARGB(255, 204, 204, 204),
                                 blurRadius: 4.0,
-                                spreadRadius: 1, 
+                                spreadRadius: 1,
                                 offset: Offset(
-                                  1.0, 
-                                  1.0, 
+                                  1.0,
+                                  1.0,
                                 ),
                               )
                             ],
@@ -200,8 +225,8 @@ class _HomePageState extends State<HomePage> {
             ),
             sessao(
               'Paula',
-              'https://images.pexels.com/photos/6577906/pexels-photo-6577906.jpeg?auto=compress&cs=tinysrgb&w=1600',
-              'https://images.pexels.com/photos/6577906/pexels-photo-6577906.jpeg?auto=compress&cs=tinysrgb&w=1600',
+              'https://images.pexels.com/photos/3435323/pexels-photo-3435323.jpeg?auto=compress&cs=tinysrgb&w=600',
+              'https://images.pexels.com/photos/3366753/pexels-photo-3366753.jpeg?auto=compress&cs=tinysrgb&w=600',
             ),
           ],
         ),
