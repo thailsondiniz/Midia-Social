@@ -20,7 +20,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: const Color(0xF5F5F5F5),
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: const Color(0xF5F5F5F5),
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
               icon: Icon(Icons.home),
@@ -40,6 +42,8 @@ class _HomePageState extends State<HomePage> {
           onTap: _onItemTapped,
         ),
         appBar: AppBar(
+          elevation: 0,
+          backgroundColor: const Color(0xF5F5F5F5),
           actions: [
             Padding(
               padding: const EdgeInsets.only(right: 10),
